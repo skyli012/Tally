@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sp = getSharedPreferences("userInfor", MODE_PRIVATE);
         boolean isLoggedIn = sp.getBoolean("is_logged_in", false);
         if (isLoggedIn) {
-//            Log.d("DailyActivity","dfsdfsdfds" + isLoggedIn);
             // ✅ 已登录，直接跳转主界面
             startActivity(new Intent(MainActivity.this, DailyActivity.class));
             finish();
