@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tallyFormLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记账"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="金额"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rg_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="餐饮" />
+
+        <RadioButton
+            android:id="@+id/rb_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="衣物" />
+
+        <RadioButton
+            android:id="@+id/rb_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零食" />
+
+        <RadioButton
+            android:id="@+id/rb_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="备注" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
